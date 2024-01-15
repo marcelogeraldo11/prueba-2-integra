@@ -35,7 +35,7 @@ public class LoginController {
         }
     }
 
-    public Usuario getUsuario(String username) {
+    public Usuario getUsuario(String username, String password) {
         try {
             String sql = "SELECT * FROM usuario WHERE username = ?";
             PreparedStatement statement = conexion.prepareStatement(sql);
